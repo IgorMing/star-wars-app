@@ -1,10 +1,12 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import Example from './Example';
+import Login from './Login';
+import Home from './Home';
 
 const MainStackNavigator = StackNavigator({
-  Example: { screen: Example }
+  Login: { screen: Login },
+  Home: { screen: Home }
 });
 
 const MainNavigator = () => <MainStackNavigator />;

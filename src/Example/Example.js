@@ -8,11 +8,13 @@ import * as actions from './redux';
 import { Spinner } from '../components';
 
 class Example extends Component {
+  info = {};
+
   componentDidMount() {
     this.props.getMessage();
   }
 
-  async logIn() {
+  logIn = async () => {
     const API_ID = '1958175950864388';
     const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(API_ID, {
       permissions: ['public_profile', 'email']
@@ -23,16 +25,30 @@ class Example extends Component {
       const response = await fetch(
         `https://graph.facebook.com/me?access_token=${token}`);
 
+      const info = await response.json();
+
       Alert.alert(
         'Logged in!',
-        `Hi ${(await response.json()).name}!`,
+        `Hi ${info.name}!`,
       );
-    }
-  }
 
-  async logOut() {
-    await Expo.Facebook.logOut(() => Alert.alert('logged out!', 'yeahhhh!'));
-  }
+      this.info = {
+        token,
+        id: info.id
+      };
+    }
+  };
+
+  logOut = async () => {
+    const response = await fetch(
+      `https://graph.facebook.com/${this.info.id}/permissions?access_token=${this.info.token}`,
+      {
+        method: 'DELETE'
+      }
+    );
+
+    console.log(await response.json());
+  };
 
   render() {
     const { example } = this.props;
@@ -48,6 +64,7 @@ class Example extends Component {
           onPress={this.logIn}
           title="Login"
         />
+
         <Button
           onPress={this.logOut}
           title="Logout"
