@@ -4,7 +4,8 @@ const API_ID = '1958175950864388';
 const FACEBOOK_URL = 'https://graph.facebook.com';
 const INITIAL_STATE = {
   token: null,
-  facebookId: null
+  facebookId: null,
+  picture: null
 };
 
 // Actions
@@ -36,7 +37,7 @@ export function login() {
 
     if (type === 'success') {
       const response = await fetch(
-        `${FACEBOOK_URL}/me?access_token=${token}`);
+        `${FACEBOOK_URL}/me?access_token=${token}&fields=id,name,picture.type(large)`);
 
       const info = await response.json();
 
@@ -44,7 +45,8 @@ export function login() {
         type: LOGIN,
         payload: {
           token,
-          facebookId: info.id
+          facebookId: info.id,
+          picture: info.picture
         }
       });
     }

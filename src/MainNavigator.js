@@ -7,6 +7,8 @@ import Home from './Home';
 const MainStackNavigator = StackNavigator({
   Login: { screen: Login },
   Home: { screen: Home }
+}, {
+  initialRouteName: 'Login'
 });
 
 const MainNavigator = () => <MainStackNavigator />;
