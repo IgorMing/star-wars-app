@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component tests should render with a left action and with right icon 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#222",
+      "flexDirection": "row",
+      "paddingBottom": 10,
+      "paddingLeft": 18,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      allowFontScaling={false}
+      disabled={false}
+      ellipsizeMode="tail"
+      hitSlop={undefined}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "simple-line-icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+      testID={undefined}
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 9,
+        "justifyContent": "center",
+        "marginLeft": 18,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 17,
+        }
+      }
+    >
+      Star wars app
+    </Text>
+  </View>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "http://geekycentral.com/wp-content/uploads/2017/09/react-native.png",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 50,
+          "height": 45,
+          "marginRight": 18,
+          "width": 45,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`Header component tests should render with a left action and without right icon 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#222",
+      "flexDirection": "row",
+      "paddingBottom": 10,
+      "paddingLeft": 18,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      allowFontScaling={false}
+      disabled={false}
+      ellipsizeMode="tail"
+      hitSlop={undefined}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "simple-line-icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+      testID={undefined}
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 9,
+        "justifyContent": "center",
+        "marginLeft": 18,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 17,
+        }
+      }
+    >
+      Star wars app
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Header component tests should render with right icon 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#222",
+      "flexDirection": "row",
+      "paddingBottom": 10,
+      "paddingLeft": 18,
+      "paddingTop": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      allowFontScaling={false}
+      disabled={false}
+      ellipsizeMode="tail"
+      hitSlop={undefined}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "color": "white",
+            "fontSize": 20,
+          },
+          undefined,
+          Object {
+            "fontFamily": "simple-line-icons",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+      testID={undefined}
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 9,
+        "justifyContent": "center",
+        "marginLeft": 18,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      disabled={false}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "white",
+          "fontSize": 17,
+        }
+      }
+    >
+      Star wars app
+    </Text>
+  </View>
+  <View>
+    <Image
+      source={
+        Object {
+          "uri": "http://geekycentral.com/wp-content/uploads/2017/09/react-native.png",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 50,
+          "height": 45,
+          "marginRight": 18,
+          "width": 45,
+        }
+      }
+    />
+  </View>
+</View>
+`;
